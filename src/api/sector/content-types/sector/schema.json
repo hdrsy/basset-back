@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sectors",
+  "info": {
+    "singularName": "sector",
+    "pluralName": "sectors",
+    "displayName": "2- مجال الوثيقة",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::type.type",
+      "inversedBy": "sectors"
+    },
+    "sectorQuestion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "question.question"
+    },
+    "sector_targets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::target.target",
+      "mappedBy": "sector"
+    }
+  }
+}

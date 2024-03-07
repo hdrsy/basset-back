@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "links",
+  "info": {
+    "singularName": "link",
+    "pluralName": "links",
+    "displayName": "link"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "docx": {
+      "type": "string"
+    },
+    "pdf": {
+      "type": "string"
+    }
+  }
+}

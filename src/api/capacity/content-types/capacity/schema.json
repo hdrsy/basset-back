@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capacities",
+  "info": {
+    "singularName": "capacity",
+    "pluralName": "capacities",
+    "displayName": "4-1- صفات التعاقد",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "paragraph": {
+      "type": "richtext",
+      "required": true
+    },
+    "capacityQuestion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question.question"
+    },
+    "excludes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::type.type"
+    }
+  }
+}

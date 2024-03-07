@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "extras",
+  "info": {
+    "singularName": "extra",
+    "pluralName": "extras",
+    "displayName": "6-1- الميزات",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "extraQuestion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "question.question"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

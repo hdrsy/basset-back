@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "begins",
+  "info": {
+    "singularName": "begin",
+    "pluralName": "begins",
+    "displayName": "5- المقدمة",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "text",
+      "required": true
+    },
+    "documentQuestion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question.question"
+    },
+    "paragraph51": {
+      "type": "richtext",
+      "required": true
+    },
+    "paragraph52": {
+      "type": "richtext"
+    },
+    "target": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::target.target",
+      "inversedBy": "begin"
+    }
+  }
+}

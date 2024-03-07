@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conditions",
+  "info": {
+    "singularName": "condition",
+    "pluralName": "conditions",
+    "displayName": "7- الخاتمة",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "conditionQuestion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "question.question"
+    },
+    "target": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::target.target",
+      "inversedBy": "conditions"
+    }
+  }
+}

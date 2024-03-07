@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "complexoptions",
+  "info": {
+    "singularName": "complexoption",
+    "pluralName": "complexoptions",
+    "displayName": "complexoption",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "complexquestions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question.question"
+    },
+    "complex": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::complex.complex",
+      "inversedBy": "complexoptions"
+    }
+  }
+}

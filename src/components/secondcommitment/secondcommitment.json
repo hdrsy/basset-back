@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_secondcommitment_secondcommitments",
+  "info": {
+    "displayName": "secondcommitment"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "secondcommitmentQuestion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question.question"
+    }
+  }
+}

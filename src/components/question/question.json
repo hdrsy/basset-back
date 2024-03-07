@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_question_questions",
+  "info": {
+    "displayName": "question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "option",
+        "form",
+        "multiple_option",
+        "complex"
+      ],
+      "default": "option",
+      "required": true
+    },
+    "desc": {
+      "type": "text"
+    },
+    "complex": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::complex.complex"
+    }
+  }
+}

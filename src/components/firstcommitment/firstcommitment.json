@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_firstcommitment_firstcommitments",
+  "info": {
+    "displayName": "firstcommitment"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext",
+      "required": false
+    },
+    "firstcommitmentQuestion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question.question"
+    }
+  }
+}

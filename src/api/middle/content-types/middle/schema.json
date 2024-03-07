@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "middles",
+  "info": {
+    "singularName": "middle",
+    "pluralName": "middles",
+    "displayName": "6- العرض",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstcommitment": {
+      "type": "component",
+      "repeatable": true,
+      "component": "firstcommitment.firstcommitment"
+    },
+    "secondcommitment": {
+      "type": "component",
+      "repeatable": true,
+      "component": "secondcommitment.secondcommitment"
+    },
+    "optionalprovisions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "provision.provision"
+    },
+    "price": {
+      "type": "component",
+      "repeatable": true,
+      "component": "price.price"
+    },
+    "target": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::target.target",
+      "inversedBy": "alerds"
+    }
+  }
+}

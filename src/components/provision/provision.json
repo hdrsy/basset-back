@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_provision_provisions",
+  "info": {
+    "displayName": "provision"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "provisionQuestion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "question.question"
+    }
+  }
+}

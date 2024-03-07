@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "targets",
+  "info": {
+    "singularName": "target",
+    "pluralName": "targets",
+    "displayName": "3- الهدف من الوثيقة",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "targetQuestion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "question.question"
+    },
+    "sector": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sector.sector",
+      "inversedBy": "sector_targets"
+    },
+    "begin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::begin.begin",
+      "mappedBy": "target"
+    },
+    "target_party": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::party.party",
+      "mappedBy": "target"
+    },
+    "conditions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::condition.condition",
+      "mappedBy": "target"
+    },
+    "alerds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::middle.middle",
+      "mappedBy": "target"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_price_prices",
+  "info": {
+    "displayName": "price",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "priceQuestion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question.question"
+    },
+    "paragraph": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "mainField": "name",
+    "groups": {
+      "customOrder": {
+        "name": "Custom Order",
+        "collections": [
+                    "types",
+                     "sectors",
+                      "parties",
+                      "begins",
+                      "middles",
+                      "extras",
+                      "targets",
+                      "capacities",
+                      "conditions",
+                      "contracts",
+                      "answers",
+                      "up_users"
+                    ]
+      }
+    }
+  }

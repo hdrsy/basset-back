@@ -1,0 +1,41 @@
+{
+  "name": "baseet",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "clean": "rimraf dist",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@bn-digital/strapi-plugin-field-uuid": "^1.2.12",
+    "@strapi/plugin-i18n": "4.12.1",
+    "@strapi/plugin-users-permissions": "4.12.1",
+    "@strapi/strapi": "4.12.1",
+    "docx": "^8.2.2",
+    "docxtemplater": "^3.37.13",
+    "jwt-decode": "^3.1.2",
+    "koa-jwt": "^4.0.4",
+    "libphonenumber-js": "^1.10.40",
+    "libreoffice-convert": "^1.4.1",
+    "officegen": "^0.6.5",
+    "onlyoffice-strapi": "^1.1.0",
+    "pdfkit": "^0.13.0",
+    "pg": "8.8.0",
+    "pizzip": "^3.1.4"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "ddb74090-3540-4253-aa30-08b5bb3d74ad"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

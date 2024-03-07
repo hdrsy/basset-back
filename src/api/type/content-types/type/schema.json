@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "types",
+  "info": {
+    "singularName": "type",
+    "pluralName": "types",
+    "displayName": "1 نوع الوثيقة",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "typeQuestion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question.question"
+    },
+    "sectors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sector.sector",
+      "mappedBy": "type"
+    }
+  }
+}
